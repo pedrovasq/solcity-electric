@@ -59,12 +59,6 @@ This is a static site—host it on any static web host:
 - Netlify/Vercel: drag-and-drop or connect repo (no build step).
 - Any static host (S3/CloudFront, Nginx, Apache): upload the files as-is.
 
-## Contact (as shown on site)
-
-- Phone: `602-512-5222`
-- Email: `solcityelectric@gmail.com`
-- Social: Instagram, Google, Facebook, WhatsApp (see header/footer links)
-
 ## Notes
 
 - No framework or package dependencies are used. `package-lock.json` exists only as a placeholder; there is no `node_modules` or build process.
