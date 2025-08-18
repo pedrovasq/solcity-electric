@@ -9,13 +9,22 @@
   <link rel="icon" href="assets/logo-svg.svg" />
   <meta name="theme-color" content="#00296B" />
   <link rel="stylesheet" href="styles.css">
+  <script>
+    // Set initial lang ASAP to reduce mismatch on load
+    (function(){
+      try {
+        var lang = localStorage.getItem('lang');
+        if (lang) document.documentElement.setAttribute('lang', lang);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
   <header class="site-header">
     <div class="topbar">
       <div class="container topbar-inner">
-        <span class="topbar-note">Maricopa-based • Arizona statewide</span>
+        <span class="topbar-note" data-i18n="topbar.note">Maricopa-based • Arizona statewide</span>
         <nav class="topbar-socials" aria-label="Social links">
           <a class="tb-social" href="https://instagram.com/solcityelectric" target="_blank" rel="noopener" aria-label="Instagram">
             <img class="tb-icon" src="assets/glyphs/instagram-neg.svg" alt="" aria-hidden="true" />
@@ -38,13 +47,16 @@
         <span class="brand-name">SolCity Electric</span>
       </a>
       <nav class="nav" aria-label="Primary">
-        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <img class="nav-toggle-icon" src="assets/glyphs/menu.svg" alt="" aria-hidden="true" />
+          <span class="sr-only" data-i18n="nav.menu">Menu</span>
+        </button>
         <ul id="nav-menu" class="nav-menu">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#certs">Credentials</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#certs" data-i18n="nav.certs">Credentials</a></li>
+          <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -53,34 +65,34 @@
     <section id="top" class="hero">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <h1>Professional Electrician Services for Homes & Businesses in AZ</h1>
-          <p class="lead">Residential & light commercial. CR-11. Licensed, bonded & insured.</p>
-          <p class="lead two">Maricopa-based • Serving Arizona statewide</p>
+          <h1 data-i18n="hero.h1">Professional Electrician Services for Homes & Businesses in AZ</h1>
+          <p class="lead" data-i18n="hero.lead1">Residential & light commercial. CR-11. Licensed, bonded & insured.</p>
+          <p class="lead two" data-i18n="hero.lead2">Maricopa-based • Serving Arizona statewide</p>
           <div class="hero-actions">
-            <a href="#contact" class="btn">Contact Us</a>
+            <a href="#contact" class="btn" data-i18n="hero.cta">Contact Us</a>
           </div>
           <ul class="badges">
-            <li class="badge">CR-11 Residential Electrical (AZ)</li>
-            <li class="badge">Family-owned by Germy Garcia</li>
+            <li class="badge" data-i18n="badges.cr11">CR-11 Residential Electrical (AZ)</li>
+            <li class="badge" data-i18n="badges.family">Family-owned by Germy Garcia</li>
           </ul>
         </div>
         <div class="hero-media">
-          <img src="assets/hero-image.png" alt="Professional electrical work by SolCity" decoding="async" />
+          <img src="assets/hero-image.png" alt="Professional electrical work by SolCity" data-i18n-aria-label="hero.imgAlt" decoding="async" />
         </div>
       </div>
     </section>
     <section id="services" class="section">
       <div class="container">
         <header class="section-head">
-          <h2>Core Services</h2>
-          <p>Reliable installs, upgrades, and troubleshooting for homes & businesses.</p>
+          <h2 data-i18n="services.h2">Core Services</h2>
+          <p data-i18n="services.p">Reliable installs, upgrades, and troubleshooting for homes & businesses.</p>
         </header>
         <div class="grid services-grid">
-          <article class="card"><img loading="lazy" decoding="async" src="assets/services/residential.jpg" alt="Residential service" /><h3>Residential</h3><p>Repairs, upgrades, and installs for Arizona homes.</p></article>
-          <article class="card"><img loading="lazy" decoding="async" src="assets/services/lighting.jpg" alt="Lighting service" /><h3>Lighting</h3><p>Indoor and outdoor lighting design and installation.</p></article>
-          <article class="card"><img loading="lazy" decoding="async" src="assets/services/pool.jpg" alt="Pool service" /><h3>Pool</h3><p>Power for pools, equipment, and outdoor amenities.</p></article>
-          <article class="card"><img loading="lazy" decoding="async" src="assets/services/remodel.jpg" alt="Remodel service" /><h3>Remodel</h3><p>Wiring plans and installs for remodels and additions.</p></article>
-          <article class="card"><img loading="lazy" decoding="async" src="assets/services/commercial.jpg" alt="Commercial service" /><h3>Commercial</h3><p>Light commercial service calls and improvements.</p></article>
+          <article class="card"><img loading="lazy" decoding="async" src="assets/services/residential.jpg" alt="Residential service" /><h3 data-i18n="services.residential.h3">Residential</h3><p data-i18n="services.residential.p">Repairs, upgrades, and installs for Arizona homes.</p></article>
+          <article class="card"><img loading="lazy" decoding="async" src="assets/services/lighting.jpg" alt="Lighting service" /><h3 data-i18n="services.lighting.h3">Lighting</h3><p data-i18n="services.lighting.p">Indoor and outdoor lighting design and installation.</p></article>
+          <article class="card"><img loading="lazy" decoding="async" src="assets/services/pool.jpg" alt="Pool service" /><h3 data-i18n="services.pool.h3">Pool</h3><p data-i18n="services.pool.p">Power for pools, equipment, and outdoor amenities.</p></article>
+          <article class="card"><img loading="lazy" decoding="async" src="assets/services/remodel.jpg" alt="Remodel service" /><h3 data-i18n="services.remodel.h3">Remodel</h3><p data-i18n="services.remodel.p">Wiring plans and installs for remodels and additions.</p></article>
+          <article class="card"><img loading="lazy" decoding="async" src="assets/services/commercial.jpg" alt="Commercial service" /><h3 data-i18n="services.commercial.h3">Commercial</h3><p data-i18n="services.commercial.p">Light commercial service calls and improvements.</p></article>
         </div>
       </div>
     </section>
@@ -90,36 +102,36 @@
           <img loading="lazy" decoding="async" src="assets/germy-garcia.jpg" alt="Germy Garcia of SolCity Electric" />
         </div>
         <div class="about-copy">
-          <h2>Built on Craft. Powered by Family.</h2>
-          <p>Founder <strong>Germy Garcia</strong> comes from a long line of electricians. We deliver straight-shooting, code-compliant work with clear timelines and clean finishes.</p>
+          <h2 data-i18n="about.h2">Built on Craft. Powered by Family.</h2>
+          <p data-i18n-html="about.p_html">Founder <strong>Germy Garcia</strong> comes from a long line of electricians. We deliver straight-shooting, code-compliant work with clear timelines and clean finishes.</p>
         </div>
       </div>
     </section>
     <section id="certs" class="section">
       <div class="container">
         <header class="section-head">
-          <h2>Credentials & Coverage</h2>
-          <p>Why “licensed, bonded & insured” matters.</p>
+          <h2 data-i18n="certs.h2">Credentials & Coverage</h2>
+          <p data-i18n="certs.p">Why “licensed, bonded & insured” matters.</p>
         </header>
         <div class="grid cred-grid">
           <div class="cred">
-            <div class="cred-head"><img class="cred-icon" src="assets/glyphs/licensed.svg" alt="" aria-hidden="true" /><h3>Licensed</h3></div>
-            <p>CR-11 Residential Electrical (Arizona). <a href="https://azroc.my.site.com/AZRoc/s/contractor-search?licenseId=a0o8y000000kWYSAA2" target="_blank" rel="noopener">ROC346957</a>. We pull permits and meet code on every job.</p>
+            <div class="cred-head"><img class="cred-icon" src="assets/glyphs/licensed.svg" alt="" aria-hidden="true" /><h3 data-i18n="certs.licensed.h3">Licensed</h3></div>
+            <p data-i18n-html="certs.licensed.p_html">CR-11 Residential Electrical (Arizona). <a href="https://azroc.my.site.com/AZRoc/s/contractor-search?licenseId=a0o8y000000kWYSAA2" target="_blank" rel="noopener">ROC346957</a>. We pull permits and meet code on every job.</p>
           </div>
           <div class="cred">
-            <div class="cred-head"><img class="cred-icon" src="assets/glyphs/bonded.svg" alt="" aria-hidden="true" /><h3>Bonded</h3></div>
-            <p>Surety bond coverage adds financial protection. It’s an extra layer of accountability for your project.</p>
+            <div class="cred-head"><img class="cred-icon" src="assets/glyphs/bonded.svg" alt="" aria-hidden="true" /><h3 data-i18n="certs.bonded.h3">Bonded</h3></div>
+            <p data-i18n="certs.bonded.p">Surety bond coverage adds financial protection. It’s an extra layer of accountability for your project.</p>
           </div>
           <div class="cred">
-            <div class="cred-head"><img class="cred-icon" src="assets/glyphs/insured.svg" alt="" aria-hidden="true" /><h3>Insured</h3></div>
-            <p>General liability and worker coverage. You’re protected if the unexpected happens.</p>
+            <div class="cred-head"><img class="cred-icon" src="assets/glyphs/insured.svg" alt="" aria-hidden="true" /><h3 data-i18n="certs.insured.h3">Insured</h3></div>
+            <p data-i18n="certs.insured.p">General liability and worker coverage. You’re protected if the unexpected happens.</p>
           </div>
         </div>
       </div>
     </section>
     <section id="gallery" class="section section--alt">
       <div class="container">
-        <header class="section-head"><h2>Recent Work</h2></header>
+        <header class="section-head"><h2 data-i18n="gallery.h2">Recent Work</h2></header>
         <div class="grid gallery-grid">
           <a href="assets/gallery/gallery-img%20(1).jpg" class="gallery-item"><img loading="lazy" decoding="async" src="assets/gallery/gallery-img%20(1).jpg" alt="Project photo 1" /></a>
           <a href="assets/gallery/gallery-img%20(2).jpg" class="gallery-item"><img loading="lazy" decoding="async" src="assets/gallery/gallery-img%20(2).jpg" alt="Project photo 2" /></a>
@@ -157,36 +169,36 @@
     <section id="contact" class="section">
       <div class="container contact">
         <header class="section-head">
-          <h2>Contact</h2>
-          <p>We’d love to hear about your project. Call or email us today!</p>
+          <h2 data-i18n="contact.h2">Contact</h2>
+          <p data-i18n="contact.p">We’d love to hear about your project. Call or email us today!</p>
         </header>
         <div class="contact-grid">
           <aside class="card card--plain contact-aside">
-            <h3>Service Area</h3>
-            <p>Based in Maricopa, serving clients across Arizona.</p>
+            <h3 data-i18n="contact.service_area.h3">Service Area</h3>
+            <p data-i18n="contact.service_area.p">Based in Maricopa, serving clients across Arizona.</p>
             <img class="map" loading="lazy" decoding="async" src="assets/az-flag.png" alt="Arizona statewide service area" />
             <div class="socials" aria-label="Social media links">
               <a class="social social--ig" href="https://instagram.com/solcityelectric" target="_blank" rel="noopener" aria-label="Instagram">
                 <img class="icon-svg" src="assets/glyphs/instagram-neg.svg" alt="" aria-hidden="true" />
-                <span>Instagram</span>
+                <span data-i18n="contact.socials.instagram">Instagram</span>
               </a>
               <a class="social social--gg" href="https://www.google.com/search?q=SolCity+Electric+Maricopa" target="_blank" rel="noopener" aria-label="Google">
                 <img class="icon-svg" src="assets/glyphs/google-neg.svg" alt="" aria-hidden="true" />
-                <span>Google</span>
+                <span data-i18n="contact.socials.google">Google</span>
               </a>
               <a class="social social--fb" href="https://facebook.com/solcityelectric" target="_blank" rel="noopener" aria-label="Facebook">
                 <img class="icon-svg" src="assets/glyphs/facebook-neg.svg" alt="" aria-hidden="true" />
-                <span>Facebook</span>
+                <span data-i18n="contact.socials.facebook">Facebook</span>
               </a>
               <a class="social social--wa" href="https://wa.me/16025125222" target="_blank" rel="noopener" aria-label="WhatsApp">
                 <img class="icon-svg" src="assets/glyphs/whatsapp-neg.svg" alt="" aria-hidden="true" />
-                <span>WhatsApp</span>
+                <span data-i18n="contact.socials.whatsapp">WhatsApp</span>
               </a>
             </div>
             <ul class="contact-list">
-              <li><strong>Phone:</strong><a href="tel:+16025125222">602-512-5222</a></li>
-              <li><strong>Email:</strong><a href="mailto:solcityelectric@gmail.com">solcityelectric@gmail.com</a></li>
-              <li><strong>Hours:</strong><span>Mon–Fri 8am–5pm</span></li>
+              <li><strong data-i18n="contact.list.phone">Phone:</strong><a href="tel:+16025125222">602-512-5222</a></li>
+              <li><strong data-i18n="contact.list.email">Email:</strong><a href="mailto:solcityelectric@gmail.com">solcityelectric@gmail.com</a></li>
+              <li><strong data-i18n="contact.list.hours">Hours:</strong><span data-i18n="contact.list.hours_value">Mon–Fri 8am–5pm</span></li>
             </ul>
           </aside>
         </div>
@@ -198,18 +210,20 @@
       <p>© <span id="year"></span> SolCity Electric — CR-11 • ROC346957 • Licensed • Bonded • Insured</p>
     </div>
   </footer>
-  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" aria-describedby="lightbox-caption" hidden>
-    <button class="lightbox-close" aria-label="Close image preview">×</button>
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" data-i18n-aria-label="lightbox.aria_label" aria-describedby="lightbox-caption" hidden>
+    <button class="lightbox-close" data-i18n-aria-label="lightbox.close_aria">×</button>
     <figure class="lightbox-figure">
       <img alt="" />
       <figcaption id="lightbox-caption" class="lightbox-caption"></figcaption>
     </figure>
   </div>
-  <button id="back-to-top" class="backtotop" aria-label="Back to top" title="Back to top" hidden>
+  <button id="back-to-top" class="backtotop" data-i18n-aria-label="backtotop.aria" data-i18n-title="backtotop.title" hidden>
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
       <path d="M12 5l-7 7m7-7l7 7m-7-7v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   </button>
+  <button id="lang-fab" class="langfab" type="button" aria-label="Language" title="Language">EN</button>
+  <script src="i18n/i18n.js" defer></script>
   <script src="script.js" defer></script>
 </body>
 </html>
