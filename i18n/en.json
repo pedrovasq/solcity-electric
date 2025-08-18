@@ -1,0 +1,65 @@
+{
+  "skip": { "content": "Skip to content" },
+  "topbar": { "note": "Maricopa-based • Arizona statewide" },
+  "nav": {
+    "menu": "Menu",
+    "services": "Services",
+    "about": "About",
+    "certs": "Credentials",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "h1": "Professional Electrician Services for Homes & Businesses in AZ",
+    "lead1": "Residential & light commercial. CR-11. Licensed, bonded & insured.",
+    "lead2": "Maricopa-based • Serving Arizona statewide",
+    "cta": "Contact Us",
+    "imgAlt": "Professional electrical work by SolCity"
+  },
+  "badges": {
+    "cr11": "CR-11 Residential Electrical (AZ)",
+    "family": "Family-owned by Germy Garcia"
+  },
+  "services": {
+    "h2": "Core Services",
+    "p": "Reliable installs, upgrades, and troubleshooting for homes & businesses.",
+    "residential": { "h3": "Residential", "p": "Repairs, upgrades, and installs for Arizona homes." },
+    "lighting": { "h3": "Lighting", "p": "Indoor and outdoor lighting design and installation." },
+    "pool": { "h3": "Pool", "p": "Power for pools, equipment, and outdoor amenities." },
+    "remodel": { "h3": "Remodel", "p": "Wiring plans and installs for remodels and additions." },
+    "commercial": { "h3": "Commercial", "p": "Light commercial service calls and improvements." }
+  },
+  "about": {
+    "h2": "Built on Craft. Powered by Family.",
+    "p_html": "Founder <strong>Germy Garcia</strong> comes from a long line of electricians. We deliver straight-shooting, code-compliant work with clear timelines and clean finishes.",
+    "imgAlt": "Germy Garcia of SolCity Electric"
+  },
+  "certs": {
+    "h2": "Credentials & Coverage",
+    "p": "Why “licensed, bonded & insured” matters.",
+    "licensed": {
+      "h3": "Licensed",
+      "p_html": "CR-11 Residential Electrical (Arizona). <a href=\"https://azroc.my.site.com/AZRoc/s/contractor-search?licenseId=a0o8y000000kWYSAA2\" target=\"_blank\" rel=\"noopener\">ROC346957</a>. We pull permits and meet code on every job."
+    },
+    "bonded": {
+      "h3": "Bonded",
+      "p": "Surety bond coverage adds financial protection. It’s an extra layer of accountability for your project."
+    },
+    "insured": {
+      "h3": "Insured",
+      "p": "General liability and worker coverage. You’re protected if the unexpected happens."
+    }
+  },
+  "gallery": { "h2": "Recent Work", "photoAlt": "Project photo" },
+  "contact": {
+    "h2": "Contact",
+    "p": "We’d love to hear about your project. Call or email us today!",
+    "service_area": { "h3": "Service Area", "p": "Based in Maricopa, serving clients across Arizona.", "imgAlt": "Arizona statewide service area" },
+    "socials": { "instagram": "Instagram", "google": "Google", "facebook": "Facebook", "whatsapp": "WhatsApp" },
+    "list": { "phone": "Phone:", "email": "Email:", "hours": "Hours:", "hours_value": "Mon–Fri 8am–5pm" }
+  },
+  "lightbox": { "aria_label": "Image preview", "close_aria": "Close image preview" },
+  "backtotop": { "aria": "Back to top", "title": "Back to top" },
+  "langswitch": { "label": "Language", "en": "English", "es": "Spanish" },
+  "toast": { "ask_es": "See this page in Spanish?", "yes": "Yes", "no": "No thanks" }
+}

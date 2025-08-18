@@ -1,0 +1,65 @@
+{
+  "skip": { "content": "Saltar al contenido" },
+  "topbar": { "note": "Maricopa, AZ • Servicio estatal" },
+  "nav": {
+    "menu": "Menú",
+    "services": "Servicios",
+    "about": "Acerca de",
+    "certs": "Credenciales",
+    "gallery": "Galería",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "h1": "Servicios Profesionales de Electricista para Hogares y Negocios en AZ",
+    "lead1": "Residencial y comercial ligero. CR-11. Licenciados, afianzados y asegurados.",
+    "lead2": "Con sede en Maricopa • Servicio en todo Arizona",
+    "cta": "Contáctenos",
+    "imgAlt": "Trabajo eléctrico profesional por SolCity"
+  },
+  "badges": {
+    "cr11": "CR-11 Electricidad Residencial (AZ)",
+    "family": "Empresa familiar de Germy Garcia"
+  },
+  "services": {
+    "h2": "Servicios Principales",
+    "p": "Instalaciones, mejoras y diagnósticos confiables para hogares y negocios.",
+    "residential": { "h3": "Residencial", "p": "Reparaciones, mejoras e instalaciones para hogares en Arizona." },
+    "lighting": { "h3": "Iluminación", "p": "Diseño e instalación de iluminación interior y exterior." },
+    "pool": { "h3": "Alberca", "p": "Energía para albercas, equipos y amenidades exteriores." },
+    "remodel": { "h3": "Remodelación", "p": "Planos de cableado e instalaciones para remodelaciones y ampliaciones." },
+    "commercial": { "h3": "Comercial", "p": "Llamadas de servicio e incorporaciones para comercio ligero." }
+  },
+  "about": {
+    "h2": "Construido con Oficio. Impulsado por la Familia.",
+    "p_html": "El fundador <strong>Germy Garcia</strong> proviene de una larga línea de electricistas. Entregamos trabajo directo, conforme al código, con tiempos claros y acabados limpios.",
+    "imgAlt": "Germy Garcia de SolCity Electric"
+  },
+  "certs": {
+    "h2": "Credenciales y Cobertura",
+    "p": "Por qué ‘licenciados, afianzados y asegurados’ importa.",
+    "licensed": {
+      "h3": "Licenciados",
+      "p_html": "CR-11 Electricidad Residencial (Arizona). <a href=\"https://azroc.my.site.com/AZRoc/s/contractor-search?licenseId=a0o8y000000kWYSAA2\" target=\"_blank\" rel=\"noopener\">ROC346957</a>. Tramitamos permisos y cumplimos el código en cada trabajo."
+    },
+    "bonded": {
+      "h3": "Afianzados",
+      "p": "La fianza brinda protección financiera adicional. Es una capa extra de responsabilidad para su proyecto."
+    },
+    "insured": {
+      "h3": "Asegurados",
+      "p": "Responsabilidad civil general y cobertura para trabajadores. Usted está protegido si ocurre lo inesperado."
+    }
+  },
+  "gallery": { "h2": "Trabajos Recientes", "photoAlt": "Foto de proyecto" },
+  "contact": {
+    "h2": "Contacto",
+    "p": "Nos encantaría conocer su proyecto. ¡Llame o envíe un correo hoy!",
+    "service_area": { "h3": "Área de Servicio", "p": "Con sede en Maricopa, atendemos clientes en todo Arizona.", "imgAlt": "Área de servicio en todo Arizona" },
+    "socials": { "instagram": "Instagram", "google": "Google", "facebook": "Facebook", "whatsapp": "WhatsApp" },
+    "list": { "phone": "Teléfono:", "email": "Correo:", "hours": "Horario:", "hours_value": "Lun–Vie 8am–5pm" }
+  },
+  "lightbox": { "aria_label": "Vista previa de imagen", "close_aria": "Cerrar vista previa de imagen" },
+  "backtotop": { "aria": "Volver arriba", "title": "Volver arriba" },
+  "langswitch": { "label": "Idioma", "en": "Inglés", "es": "Español" },
+  "toast": { "ask_es": "¿Ver esta página en Español?", "yes": "Sí", "no": "No, gracias" }
+}
