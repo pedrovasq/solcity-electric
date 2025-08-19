@@ -97,7 +97,9 @@ body {
 .badge { background: rgba(255,255,255,0.1); padding: .3rem .6rem; border-radius: 4px; }
 
 .grid { display: grid; gap: 2rem; }
-.services-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+/* Centered rows using Flexbox, fixed card width */
+.services-grid { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
+.services-grid .card { width: 300px; }
 .card {
   background: var(--surface);
   border-radius: 4px;
@@ -120,7 +122,8 @@ body {
 .about { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
 .about img { width: 100%; border-radius: 4px; }
 
-.cred-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); text-align: center; }
+.cred-grid { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; text-align: center; }
+.cred-grid .cred { width: 300px; }
 .cred { padding: 1.25rem 1.25rem; background: var(--surface); border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.06); }
 .cred-head { display: flex; align-items: center; justify-content: center; gap: .6rem; margin-bottom: .35rem; }
 .cred-icon { width: 48px; height: 48px; display: block; flex-shrink: 0; filter: invert(57%) sepia(56%) saturate(432%) hue-rotate(92deg) brightness(94%) contrast(88%); }
@@ -167,7 +170,8 @@ body {
 .contact-list a:hover { text-decoration: underline; }
 
 /* Contact layout tweaks */
-.contact-aside .socials { justify-content: space-evenly; column-gap: 0; row-gap: .5rem; width: 100%; }
+.contact-aside .socials { justify-content: center; column-gap: .5rem; row-gap: .5rem; width: 100%; }
+.contact-aside .socials .social { width: 150px; justify-content: center; }
 .contact-list li { display: grid; grid-template-columns: 90px 1fr; column-gap: .5rem; align-items: baseline; }
 .contact-list strong { text-align: right; color: var(--text-dim); }
 .contact-list span { color: var(--text); }
@@ -195,6 +199,7 @@ body {
 
 /* Extra safe horizontal padding on very small screens (e.g., iPhone) */
 @media (max-width: 480px) {
+  .contact-aside .socials .social { width: calc(50% - .5rem); }
   .site-header .topbar .container,
   .site-header .header-inner {
     padding-left: max(1rem, env(safe-area-inset-left));
