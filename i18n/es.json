@@ -32,7 +32,11 @@
   "about": {
     "h2": "Construido con Oficio. Impulsado por la Familia.",
     "p_html": "El fundador <strong>Germy Garcia</strong> proviene de una larga línea de electricistas. Entregamos trabajo directo, conforme al código, con tiempos claros y acabados limpios.",
-    "imgAlt": "Germy Garcia de SolCity Electric"
+    "imgAlt": "Germy Garcia de SolCity Electric",
+    "crew": {
+      "h3": "Nuestro Equipo",
+      "p": "Nuestro equipo licenciado aporta años de experiencia combinada en proyectos residenciales y comerciales ligeros."
+    }
   },
   "certs": {
     "h2": "Credenciales y Cobertura",

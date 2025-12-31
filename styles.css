@@ -121,6 +121,11 @@ body {
 
 .about { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
 .about img { width: 100%; border-radius: 4px; }
+/* About section as two cards */
+.about-cards { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.about-card img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.about-card h3 { margin: 1rem 0 .5rem; }
+.about-card p { padding: 0 1rem 1rem; }
 
 .cred-grid { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; text-align: center; }
 .cred-grid .cred { width: 300px; }
