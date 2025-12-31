@@ -123,7 +123,8 @@ body {
 .about img { width: 100%; border-radius: 4px; }
 /* About section as two cards */
 .about-cards { grid-template-columns: repeat(auto-fit, minmax(280px, 520px)); justify-content: center; }
-.about-card img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.about-card { max-width: 520px; margin: 0 auto; }
+.about-card img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; max-height: 360px; }
 .about-card h3 { margin: 1rem 0 .5rem; }
 .about-card p { padding: 0 1rem 1rem; }
 
