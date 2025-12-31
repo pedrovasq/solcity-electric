@@ -33,6 +33,7 @@
     "h2": "Construido con Oficio. Impulsado por la Familia.",
     "p_html": "El fundador <strong>Germy Garcia</strong> proviene de una larga línea de electricistas. Entregamos trabajo directo, conforme al código, con tiempos claros y acabados limpios.",
     "imgAlt": "Germy Garcia de SolCity Electric",
+    "founder": { "h3": "Nuestro Fundador" },
     "crew": {
       "h3": "Nuestro Equipo",
       "p": "Electricistas con experiencia y confianza en todo el estado: programación ágil, recomendaciones honestas e instalaciones duraderas que se ven bien y resisten el paso del tiempo."

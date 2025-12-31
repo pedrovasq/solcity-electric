@@ -33,6 +33,7 @@
     "h2": "Built on Craft. Powered by Family.",
     "p_html": "Founder <strong>Germy Garcia</strong> comes from a long line of electricians. We deliver straight-shooting, code-compliant work with clear timelines and clean finishes.",
     "imgAlt": "Germy Garcia of SolCity Electric",
+    "founder": { "h3": "Our Founder" },
     "crew": {
       "h3": "Our Crew",
       "p": "Experienced electricians you can rely on statewide: responsive scheduling, honest recommendations, and durable installations that look great and stand the test of time."
